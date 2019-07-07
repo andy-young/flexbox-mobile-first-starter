@@ -9,5 +9,125 @@ body {
 }
 
 .logo > img {
+  padding-top: 5px;
   width: 50px;
+}
+
+.navbar {
+  background-color: gray;
+  color: white;
+  list-style: none;
+}
+
+.menu, .social {
+  list-style-type: none;
+}
+
+.product {
+  border: .5px solid gray;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .item, .fas, h2 {
+    align-self: center;
+    padding-top: 4px;
+  }
+
+  .navbar, .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .hamburger {
+    padding-right: 15px;
+    align-self: flex-end;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 521px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .item, .fas, h2 {
+    align-self: center;
+    padding-top: 4px;
+  }
+
+  .navbar, .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .hamburger {
+    padding-right: 15px;
+    align-self: flex-end;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  li {
+    padding-right: 25px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .product {
+    flex: 1 1 10px;
+    margin: 20px;
+  }
+
+  p {
+    padding: 5px;
+  }
+
 }
